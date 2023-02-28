@@ -1,0 +1,22 @@
+.tamagotchi {
+    padding: 16px;
+};
+
+.dog {
+    background-color: rgb(255, 221, 221);
+};
+
+.cat {
+    background-color: rgb(221, 255, 221);
+};
+
+.died {
+    background-color: black;
+};
+
+#tamagotchi-container {
+    padding: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: nowrap;
+};
