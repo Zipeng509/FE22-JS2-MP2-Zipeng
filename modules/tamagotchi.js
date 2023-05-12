@@ -16,7 +16,7 @@ class Tamagotchi {
   
     //Kicka igång
     startPlaying() {
-      const tamagotchiContainer = document.querySelector("#tamagotchi-container");
+      const tamagotchiContainer = document.getElementById("tamagotchi-container");
       tamagotchiContainer.classList.remove("hidden");
       tamagotchiContainer.classList.add("container");
   

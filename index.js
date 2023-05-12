@@ -1,11 +1,11 @@
 import { Tamagotchi } from "./modules/tamagotchi.js";
 
-const form = document.querySelector("form");
+const form = document.getElementById("form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const nameInput = document.querySelector("input");
-  const typeSelect = document.querySelector("select");
+  const nameInput = document.getElementById("input-name");
+  const typeSelect = document.getElementById("select-type");
 
   const name = nameInput.value;
   const type = typeSelect.value;
@@ -15,8 +15,8 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  const newTama = new Tamagotchi(name, type);
-  newTama.startPlaying();
+  const newTamagotchi = new Tamagotchi(name, type);
+  newTamagotchi.startPlaying();
 
   nameInput.value = "";
   typeSelect.value = "";
